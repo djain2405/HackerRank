@@ -40,7 +40,7 @@ public class LargestPositiveSequence {
 			return null;
 		}
 		int j = 0;
-		System.out.println("Length_max:"+length_max+" "+index_min);
+		//System.out.println("Length_max:"+length_max+" "+index_min);
 		for(j = index_min; j < index_min+length_max; j++)
 		{
 			result.add(a[j]);
@@ -53,7 +53,18 @@ public class LargestPositiveSequence {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int []a = {5,2,7,2,3};
+		int []a1 = {-5,-2,-7,-2,-3};
+		int []a2 = {5,2,7,2,3};
+		int []a3 = {-5,2,-7,-2,3};
+		int []a4 = {5};
+		
+		
+		printResult(a1);
+		printResult(a2);
+		printResult(a3);
+		printResult(a4);
+	}
+	private static void printResult(int []a) {
 		ArrayList<Integer> result = larPosSeq(a);
 		if(result == null)
 		{
@@ -61,9 +72,9 @@ public class LargestPositiveSequence {
 		}
 		else
 		{
-		System.out.println(result.size());
+		//System.out.println(result.size());
 		for(int i = 0; i < result.size(); i++)
-			System.out.println(result.get(i));
+			System.out.print(result.get(i)+" ");
 		}
 	}
 
