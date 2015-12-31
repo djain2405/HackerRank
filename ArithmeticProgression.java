@@ -1,3 +1,5 @@
+package HackerRank;
+
 //Find the sum of numbers divisible by 3 or 5 upto n-1
 import java.math.BigInteger;
 import java.util.*;
